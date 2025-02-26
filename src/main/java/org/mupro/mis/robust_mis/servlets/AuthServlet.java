@@ -63,6 +63,5 @@ public class AuthServlet extends HttpServlet {
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }
+
 }
-//In this project I just stopped where there was an error where the instructor is
-//created and inserted to the database but not able to log in so see you next tome.

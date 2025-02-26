@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="org.mupro.mis.robust_mis.models.User" %>
 <%
-    User user = (User) request.getAttribute("user");
+    User user = (User) session.getAttribute("user");
     if(user == null || user.getRole() != User.Role.INSTRUCTOR){
         response.sendRedirect("login.jsp");
         return;
